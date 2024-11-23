@@ -1,0 +1,1553 @@
+local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
+local Window = Rayfield:CreateWindow({
+   Name = "Kip's BFDIA Script",
+   Icon = 0,
+   LoadingTitle = "Rayfield Interface Suite",
+   LoadingSubtitle = "by Sirius",
+   Theme = "Default", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+
+   DisableRayfieldPrompts = false,
+   DisableBuildWarnings = false,
+
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = nil, -- Create a custom folder for your hub/game
+      FileName = "Big Hub"
+   },
+
+   Discord = {
+      Enabled = false,
+      Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
+      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+   },
+
+   KeySystem = true, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Only real ones know the key",
+      Subtitle = "Key System",
+      Note = "No method of obtaining the key is provided", -- Use this to tell the user how to get a key
+      FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
+      SaveKey = false, -- The user's key will be saved, but if you change the key, they will be unable to use your script
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = {"KipIsSigmaAndCoolAndYum"} -- List of keys that will be accepted by the system, can be RAW file links (pastebin, github etc) or simple strings ("hello","key22")
+   }
+})
+local Tab = Window:CreateTab("Morphs", 14970312763) -- Title, Image
+local Button = Tab:CreateButton({
+   Name = "Become Profiley",
+   Callback = function()
+  local args = {
+    [1] = "Profiley"
+}
+
+game:GetService("ReplicatedStorage"):WaitForChild("RemoteEvents"):WaitForChild("MorphChoose"):FireServer(unpack(args))
+   end,
+})
+local Tab = Window:CreateTab("Skin Morphs", 14970312763) -- Title, Image
+local Section = Tab:CreateSection("Gelatin Skins")
+local Button = Tab:CreateButton({
+   Name = "Headphones Gelatin",
+   Callback = function()
+   local args = {
+    [1] = "Headphones Gelatin"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Brazil Gelatin",
+   Callback = function()
+   local args = {
+    [1] = "Brazil Gelatin"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Nighttime Gelatin",
+   Callback = function()
+   local args = {
+    [1] = "Nighttime Gelatin"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Tangerine Gelatin",
+   Callback = function()
+   local args = {
+    [1] = "Tangerine Gelatin"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Section = Tab:CreateSection("Firey Skins")
+local Button = Tab:CreateButton({
+   Name = "Blue Firey",
+   Callback = function()
+   local args = {
+    [1] = "Blue Firey"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "BFDIFirey",
+   Callback = function()
+   local args = {
+    [1] = "BFDIFirey"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Rainbow Firey",
+   Callback = function()
+   local args = {
+    [1] = "Rainbow Firey"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Static Firey",
+   Callback = function()
+   local args = {
+    [1] = "Static Firey"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Hallowgrad Firey",
+   Callback = function()
+   local args = {
+    [1] = "Hallowgrad Firey"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Section = Tab:CreateSection("Match Skins")
+local Button = Tab:CreateButton({
+   Name = "Blue Match",
+   Callback = function()
+   local args = {
+    [1] = "Blue Match"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Chartesue Match",
+   Callback = function()
+   local args = {
+    [1] = "Chartesue Match"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Rainbow Match",
+   Callback = function()
+   local args = {
+    [1] = "Rainbow Match"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Bride Match",
+   Callback = function()
+   local args = {
+    [1] = "Bride Match"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Section = Tab:CreateSection("Pencil Skins")
+local Button = Tab:CreateButton({
+   Name = "Saw Pencil",
+   Callback = function()
+   local args = {
+    [1] = "Saw Pencil"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Upsidedown Pencil",
+   Callback = function()
+   local args = {
+    [1] = "Upsidedown Pencil"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Gearrings Pencil",
+   Callback = function()
+   local args = {
+    [1] = "Gearrings Pencil"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Detective Pencil",
+   Callback = function()
+   local args = {
+    [1] = "Detective Pencil"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Bald Pencil",
+   Callback = function()
+   local args = {
+    [1] = "Bald Pencil"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Section = Tab:CreateSection("Ruby Skins")
+local Button = Tab:CreateButton({
+   Name = "Poo",
+   Callback = function()
+   local args = {
+    [1] = "Poo"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Ramiel Ruby",
+   Callback = function()
+   local args = {
+    [1] = "Ramiel Ruby"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Bandaged Ruby",
+   Callback = function()
+   local args = {
+    [1] = "Bandaged Ruby"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Amethyst",
+   Callback = function()
+   local args = {
+    [1] = "Amethyst"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "ybuR",
+   Callback = function()
+   local args = {
+    [1] = "ybuR"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Section = Tab:CreateSection("Book Skins")
+local Button = Tab:CreateButton({
+   Name = "Open Book",
+   Callback = function()
+   local args = {
+    [1] = "Open Book"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Book Valentine2024",
+   Callback = function()
+   local args = {
+    [1] = "Book Valentine2024"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "No Cover Book",
+   Callback = function()
+   local args = {
+    [1] = "No Cover Book"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Book 3",
+   Callback = function()
+   local args = {
+    [1] = "Book 3"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Shark Book",
+   Callback = function()
+   local args = {
+    [1] = "Shark Book"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Fashion Book",
+   Callback = function()
+   local args = {
+    [1] = "Fashion Book"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Section = Tab:CreateSection("IceCube Skins")
+local Button = Tab:CreateButton({
+   Name = "Tiny Icecube",
+   Callback = function()
+   local args = {
+    [1] = "Tiny Icecube"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Headphones Icecube",
+   Callback = function()
+   local args = {
+    [1] = "Headphones Icecube"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Dicecube",
+   Callback = function()
+   local args = {
+    [1] = "Dicecube"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Island Icecube",
+   Callback = function()
+   local args = {
+    [1] = "Island Icecube"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Amice Icecube",
+   Callback = function()
+   local args = {
+    [1] = "Amice Icecube"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Limbless Icy",
+   Callback = function()
+   local args = {
+    [1] = "Limbless Icy"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Section = Tab:CreateSection("Leafy Skins")
+local Button = Tab:CreateButton({
+   Name = "Metal Leafy",
+   Callback = function()
+   local args = {
+    [1] = "Metal Leafy"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Leafy Photo Frame",
+   Callback = function()
+   local args = {
+    [1] = "LF Leafy"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Autumn Leafy",
+   Callback = function()
+   local args = {
+    [1] = "Autumn Leafy"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Witch Leafy",
+   Callback = function()
+   local args = {
+    [1] = "Witch Leafy"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Hallowgrad Leafy",
+   Callback = function()
+   local args = {
+    [1] = "Hallowgrad Leafy"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "[HIGH RISK] Paper Jam Leafy",
+   Callback = function()
+   local args = {
+    [1] = "Paper Jam Leafy"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Football",
+   Callback = function()
+   local args = {
+    [1] = "Football"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Project TEMI Reaper",
+   Callback = function()
+   local args = {
+    [1] = "LeafyTEMI"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Section = Tab:CreateSection("Flower Skins")
+local Button = Tab:CreateButton({
+   Name = "Cary",
+   Callback = function()
+   local args = {
+    [1] = "Cary"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Locked Fashion Flower",
+   Callback = function()
+   local args = {
+    [1] = "Locked Fashion Flower"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Sea Monster Flower",
+   Callback = function()
+   local args = {
+    [1] = "Sea Monster Flower"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Hypnoflower",
+   Callback = function()
+   local args = {
+    [1] = "Hypnoflower"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "French Flower",
+   Callback = function()
+   local args = {
+    [1] = "French Flower"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Fashionista Flower",
+   Callback = function()
+   local args = {
+    [1] = "Fashionista Flower"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Project TEMI Mari",
+   Callback = function()
+   local args = {
+    [1] = "Mar1TEMI"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Section = Tab:CreateSection("Woody Skins")
+local Button = Tab:CreateButton({
+   Name = "Evil Woody",
+   Callback = function()
+   local args = {
+    [1] = "Evil Woody"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "SandWood",
+   Callback = function()
+   local args = {
+    [1] = "SandWood"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Gentle Wood",
+   Callback = function()
+   local args = {
+    [1] = "Gentle Wood"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Walk the Plank Woody",
+   Callback = function()
+   local args = {
+    [1] = "Walk the Plank Woody"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Ninja Wood",
+   Callback = function()
+   local args = {
+    [1] = "Ninja Wood"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Hallowgrad Woody",
+   Callback = function()
+   local args = {
+    [1] = "Hallowgrad Woody"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "WoodPad",
+   Callback = function()
+   local args = {
+    [1] = "WoodPad"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Pixel Woody",
+   Callback = function()
+   local args = {
+    [1] = "Pixel Wood"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Section = Tab:CreateSection("Bubble Skins")
+local Button = Tab:CreateButton({
+   Name = "Metal Bubble",
+   Callback = function()
+   local args = {
+    [1] = "Metal Bubble"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Project TEMI Flake",
+   Callback = function()
+   local args = {
+    [1] = "FlakeTEMI"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Section = Tab:CreateSection("Pen Skins")
+local Button = Tab:CreateButton({
+   Name = "Capless Pen",
+   Callback = function()
+   local args = {
+    [1] = "Capless Pen"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Mecha Quill Pen",
+   Callback = function()
+   local args = {
+    [1] = "Mecha Quill Pen"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Section = Tab:CreateSection("Eraser Skins")
+local Button = Tab:CreateButton({
+   Name = "Balloon Eraser",
+   Callback = function()
+   local args = {
+    [1] = "Balloon Eraser"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Frankenraser",
+   Callback = function()
+   local args = {
+    [1] = "Frankenraser"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Section = Tab:CreateSection("Blocky Skins")
+local Button = Tab:CreateButton({
+   Name = "Blocky Earth",
+   Callback = function()
+   local args = {
+    [1] = "Blocky Earth"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "BlocGAY",
+   Callback = function()
+   local args = {
+    [1] = "BlocGAY"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Askarian Blocky",
+   Callback = function()
+   local args = {
+    [1] = "Askarian Blocky"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Masked Blocky",
+   Callback = function()
+   local args = {
+    [1] = "Masked Blocky"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Section = Tab:CreateSection("Snowball Skins")
+local Button = Tab:CreateButton({
+   Name = "Zombie Snowball",
+   Callback = function()
+   local args = {
+    [1] = "Zombie Snowball"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Melted Snowball",
+   Callback = function()
+   local args = {
+    [1] = "Melted Snowball"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Section = Tab:CreateSection("David Skins")
+local Button = Tab:CreateButton({
+   Name = "Lewis",
+   Callback = function()
+   local args = {
+    [1] = "Lewis"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "OG David",
+   Callback = function()
+   local args = {
+    [1] = "OG David"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Orange David",
+   Callback = function()
+   local args = {
+    [1] = "Orange David"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Section = Tab:CreateSection("Cake Skins")
+local Button = Tab:CreateButton({
+   Name = "Pumpkin Cake",
+   Callback = function()
+   local args = {
+    [1] = "Pumpkin Cake"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Blueberry Cake",
+   Callback = function()
+   local args = {
+    [1] = "Blueberry Cake"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Section = Tab:CreateSection("Lightning Skins")
+local Button = Tab:CreateButton({
+   Name = "Bat Lightning",
+   Callback = function()
+   local args = {
+    [1] = "Bat Lightning"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Section = Tab:CreateSection("Lollipop Skins")
+local Button = Tab:CreateButton({
+   Name = "Vampire Lollipop",
+   Callback = function()
+   local args = {
+    [1] = "Vampire Lollipop"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Section = Tab:CreateSection("Robot Flower Skins")
+local Button = Tab:CreateButton({
+   Name = "Broken Robot Flower",
+   Callback = function()
+   local args = {
+    [1] = "Corrupted Robot Flower"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Section = Tab:CreateSection("Marker Skins")
+local Button = Tab:CreateButton({
+   Name = "Capless Marker",
+   Callback = function()
+   local args = {
+    [1] = "Capless Marker"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Section = Tab:CreateSection("Pillow Skins")
+local Button = Tab:CreateButton({
+   Name = "Broken Pillow",
+   Callback = function()
+   local args = {
+    [1] = "Broken Pillow"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Section = Tab:CreateSection("Needle Skins")
+local Button = Tab:CreateButton({
+   Name = "Princess Needle",
+   Callback = function()
+   local args = {
+    [1] = "Princess Needle"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Realistic Needle",
+   Callback = function()
+   local args = {
+    [1] = "Realistic Needle"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "BFDINeedle",
+   Callback = function()
+   local args = {
+    [1] = "BFDINeedle"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Section = Tab:CreateSection("TennisBall Skins")
+local Button = Tab:CreateButton({
+   Name = "Pink Tennisball",
+   Callback = function()
+   local args = {
+    [1] = "Pink Tennisball"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "SandoTennis",
+   Callback = function()
+   local args = {
+    [1] = "SandoTennis"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Frozen Tennisball",
+   Callback = function()
+   local args = {
+    [1] = "Frozen Tennisball"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Zakoober",
+   Callback = function()
+   local args = {
+    [1] = "Zakoober"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Project TEMI Stripey",
+   Callback = function()
+   local args = {
+    [1] = "TBTEMI"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Section = Tab:CreateSection("GolfBall Skins")
+local Button = Tab:CreateButton({
+   Name = "Bozo",
+   Callback = function()
+   local args = {
+    [1] = "Bozo"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "MMR Golfball",
+   Callback = function()
+   local args = {
+    [1] = "MMR Golfball"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Project TEMI Dimple",
+   Callback = function()
+   local args = {
+    [1] = "GBTEMI"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Section = Tab:CreateSection("Bomby Skins")
+local Button = Tab:CreateButton({
+   Name = "Purple Bomby",
+   Callback = function()
+   local args = {
+    [1] = "Purple Bomby"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Purple Bomby",
+   Callback = function()
+   local args = {
+    [1] = "Bandaged Bomby"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Purple Bomby",
+   Callback = function()
+   local args = {
+    [1] = "Pumpkin Bomby"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Section = Tab:CreateSection("Fries Skins")
+local Button = Tab:CreateButton({
+   Name = "Empty Fries",
+   Callback = function()
+   local args = {
+    [1] = "Empty Fries"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Mecha-Robot Fries",
+   Callback = function()
+   local args = {
+    [1] = "Mecha-Robot Fries"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Gangnam Fries",
+   Callback = function()
+   local args = {
+    [1] = "Gangnam Fries"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Fryalex",
+   Callback = function()
+   local args = {
+    [1] = "Fryalex"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Section = Tab:CreateSection("Rocky Skins")
+local Button = Tab:CreateButton({
+   Name = "Green Rocky",
+   Callback = function()
+   local args = {
+    [1] = "Green Rocky"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Pebble",
+   Callback = function()
+   local args = {
+    [1] = "Pebble"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Ender Rocky",
+   Callback = function()
+   local args = {
+    [1] = "Ender Rocky"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Orange Rocky",
+   Callback = function()
+   local args = {
+    [1] = "Orange Rocky"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Section = Tab:CreateSection("Spongy Skins")
+local Button = Tab:CreateButton({
+   Name = "Snatched Spongy",
+   Callback = function()
+   local args = {
+    [1] = "Snatched Spongy"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Blue Spongy",
+   Callback = function()
+   local args = {
+    [1] = "Blue Spongy"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Sunset Spongy",
+   Callback = function()
+   local args = {
+    [1] = "Sunset Spongy"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Oogie Boogie Spongy",
+   Callback = function()
+   local args = {
+    [1] = "Oogie Boogie Spongy"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Section = Tab:CreateSection("Nickel Skins")
+local Button = Tab:CreateButton({
+   Name = "Void Nickel",
+   Callback = function()
+   local args = {
+    [1] = "Void Nickel"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "New Nickel",
+   Callback = function()
+   local args = {
+    [1] = "New Nickel"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Bread Nickel",
+   Callback = function()
+   local args = {
+    [1] = "Bread Nickel"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Limbs Nickel",
+   Callback = function()
+   local args = {
+    [1] = "Limbs Nickel"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Void Nickel",
+   Callback = function()
+   local args = {
+    [1] = "Nickel With Hole"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Section = Tab:CreateSection("Coiny Skins")
+local Button = Tab:CreateButton({
+   Name = "Void Coiny",
+   Callback = function()
+   local args = {
+    [1] = "Void Coiny"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "WinTokeny",
+   Callback = function()
+   local args = {
+    [1] = "WinTokeny"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Bread Coiny",
+   Callback = function()
+   local args = {
+    [1] = "Bread Coiny"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Sleepy Coiny",
+   Callback = function()
+   local args = {
+    [1] = "Sleepy Coiny"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Hallowgrad Coiny",
+   Callback = function()
+   local args = {
+    [1] = "Hallowgrad Coiny"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Chocoiny",
+   Callback = function()
+   local args = {
+    [1] = "Chocoiny"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Over2",
+   Callback = function()
+   local args = {
+    [1] = "Over2 Coiny"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Section = Tab:CreateSection("Pin Skins")
+local Button = Tab:CreateButton({
+   Name = "Limbless Pin",
+   Callback = function()
+   local args = {
+    [1] = "Limbless Pin"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "WhitePin",
+   Callback = function()
+   local args = {
+    [1] = "WhitePin"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Gardening Pin",
+   Callback = function()
+   local args = {
+    [1] = "Gardening Pin"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Spider Pin",
+   Callback = function()
+   local args = {
+    [1] = "Spider Pin"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Mecha Pin",
+   Callback = function()
+   local args = {
+    [1] = "Mecha Pin"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "[HIGH RISK] Teto Pin",
+   Callback = function()
+   local args = {
+    [1] = "Teto Pin"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Hallowgrad Pin",
+   Callback = function()
+   local args = {
+    [1] = "Hallowgrad Pin"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Monika Pin",
+   Callback = function()
+   local args = {
+    [1] = "Monika Pin"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Section = Tab:CreateSection("Teardrop Skins")
+local Button = Tab:CreateButton({
+   Name = "Dreardrop",
+   Callback = function()
+   local args = {
+    [1] = "Dreardrop"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Mini Teardrop",
+   Callback = function()
+   local args = {
+    [1] = "Mini Teardrop"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Captain Teardrop",
+   Callback = function()
+   local args = {
+    [1] = "Captain Teardrop"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Honeydrop",
+   Callback = function()
+   local args = {
+    [1] = "Honeydrop"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Project TEMI Toxin",
+   Callback = function()
+   local args = {
+    [1] = "T0X1NTEMI"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Section = Tab:CreateSection("Puffball Skins")
+local Button = Tab:CreateButton({
+   Name = "Rainbow Puffball",
+   Callback = function()
+   local args = {
+    [1] = "Rainbow Puffball"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Zombie Puffball",
+   Callback = function()
+   local args = {
+    [1] = "Zombie Puffball"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Spider Puffball",
+   Callback = function()
+   local args = {
+    [1] = "Spider Puffball"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Zombie Puffball",
+   Callback = function()
+   local args = {
+    [1] = "Zombie Puffball"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Brainwave Puffball",
+   Callback = function()
+   local args = {
+    [1] = "Brainwave Puffball"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Section = Tab:CreateSection("Yellowface Skins")
+local Button = Tab:CreateButton({
+   Name = "Purple Smileyface",
+   Callback = function()
+   local args = {
+    [1] = "Purple Smileyface"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Limbs Smileyface",
+   Callback = function()
+   local args = {
+    [1] = "Limbs Smileyface"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Portal Smileyface",
+   Callback = function()
+   local args = {
+    [1] = "Limbs Portal Smileyface"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Gangsta/Rich Smileyface",
+   Callback = function()
+   local args = {
+    [1] = "Rich Smileyface"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Watermelony",
+   Callback = function()
+   local args = {
+    [1] = "Watermelony"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Section = Tab:CreateSection("Donut Skins")
+local Button = Tab:CreateButton({
+   Name = "Strawberry Donut",
+   Callback = function()
+   local args = {
+    [1] = "Strawberry Donut"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Armless Donut",
+   Callback = function()
+   local args = {
+    [1] = "Armless Donut"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Lifering Donut",
+   Callback = function()
+   local args = {
+    [1] = "Lifering Donut"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Vampire Donut",
+   Callback = function()
+   local args = {
+    [1] = "Vampire Donut"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Button = Tab:CreateButton({
+   Name = "Congenut Donut",
+   Callback = function()
+   local args = {
+    [1] = "Congenut"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
+local Section = Tab:CreateSection("Dora Skins")
+local Button = Tab:CreateButton({
+   Name = "Ponytail Dora",
+   Callback = function()
+   local args = {
+    [1] = "Ponytail Dora"
+}
+
+game:GetService("ReplicatedStorage").RemoteEvents.SwitchSkins:FireServer(unpack(args))
+   end,
+})
